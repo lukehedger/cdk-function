@@ -1,0 +1,36 @@
+{
+  "name": "@lukehedger/superfunction",
+  "version": "1.0.0",
+  "description": "Super Lambda Function",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "prepublishOnly": "tsup src/index.ts --dts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukehedger/constructs.git"
+  },
+  "keywords": [
+    "cdk"
+  ],
+  "author": "lukehedger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukehedger/constructs/issues"
+  },
+  "homepage": "https://github.com/lukehedger/constructs#readme",
+  "devDependencies": {
+    "tsup": "6.7.0",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.81.0",
+    "constructs": "10.2.36"
+  }
+}
